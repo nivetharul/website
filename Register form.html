@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>SND Online Courses</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+
+		.background {
+			background: #F08080;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo img {
+			width: 70px;
+			height:70px;
+			border-radius: 50px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 26px 30px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: black;
+		}
+
+		.nav-list li a:hover {
+			color: black;
+		}
+
+		.rightnav {
+			width: 30%;
+			text-align: right;
+		}
+
+		#search {
+			padding: 5px;
+			font-size: 17px;
+			border: 2px solid grey;
+			border-radius: 9px;
+		}
+      * {
+        box-sizing: border-box;
+      }
+      input[type=text],
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #eeeeee;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      input[type=submit] {
+        background-color: #4cd9c6;
+        color: #fffff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+      input[type=submit]:hover {
+        background-color: #6fe8d7;
+      }
+      .container {
+        border-radius: 8px;
+        background-color: pink;
+        padding: 15px;
+      }
+	  .text-footer {
+			text-align: center;
+			padding: 30px 0;
+			font-family: 'italic';
+			display: flex;
+			justify-content: center;
+			color: black;
+		}
+		
+    </style>
+  </head>
+    <body>
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo">
+				<img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFBAgoChIwb0gerKLmf6uy4L7LS4-j6cBQtQ&usqp=CAU">
+			</div>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="sign in form.html">Sign in Form</a></li>
+			<li><a href="Register form.html">Register form</a></li>
+		</ul>
+
+		<div class="rightNav">
+			<input type="text" name="search" id="search">
+			<button class="btn btn-sm">Search</button>
+		</div>
+	</nav>
+	    <center><h2>Register Form</h2></center>
+    <div class="container">
+      <form action="/form/submit" method="POST">
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="name" placeholder="Type your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="surname" placeholder="Type your last name..">
+        <label for="lname">E-mail Address</label>
+        <input type="text" id="mail" name="e-mail" placeholder="Type your e-mail..">
+		<label for="pnumber">Phone Number</label>
+        <input type="text" id="pnumber" name="pnumber" placeholder="Type your phone number..">
+        <label for="ci">Country</label>
+        <select id="country" name="country">
+          <option value="italy">Italy</option>
+          <option value="spain">Spain</option>
+          <option value="france">France</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Type your message.." style="height:200px"></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </div>
+	<footer class="background">
+		<p class="text-footer">
+			
+			<button class="btn btn-sm">Register link</button>
+			
+		</p>
+
+
+	</footer>
+</body>
+
+</html>
